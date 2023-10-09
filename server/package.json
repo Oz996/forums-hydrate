@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "concurrently \"nodemon server\" \"cd.. && cd client && npm run dev\"",
+    "now": " cd .. && cd client && npm install && cd .. && cd server && npm install && npm start"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "yes",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC"
+}
